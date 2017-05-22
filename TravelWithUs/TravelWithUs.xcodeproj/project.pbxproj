@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3C08F01ED28EAD007B69FD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08EF1ED28EAD007B69FD /* MenuViewController.swift */; };
+		3D3C08F21ED29161007B69FD /* menuCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08F11ED29161007B69FD /* menuCellTableViewCell.swift */; };
+		3D3C08F41ED2A270007B69FD /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08F31ED2A270007B69FD /* menuView.swift */; };
+		3D3C08F91ED2CD73007B69FD /* IntroduceProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08F71ED2CD72007B69FD /* IntroduceProfileTableViewCell.swift */; };
+		3D3C08FA1ED2CD73007B69FD /* IntroduceProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C08F81ED2CD72007B69FD /* IntroduceProfileTableViewCell.xib */; };
+		3D3C08FD1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08FB1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift */; };
+		3D3C08FE1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */; };
+		3D3C09001ED2D444007B69FD /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */; };
+		3D3C09021ED2D44D007B69FD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C09011ED2D44D007B69FD /* ContactViewController.swift */; };
 		3DEE46071ECEB125009B7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE46061ECEB125009B7D09 /* AppDelegate.swift */; };
 		3DEE46091ECEB125009B7D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE46081ECEB125009B7D09 /* ViewController.swift */; };
 		3DEE460C1ECEB125009B7D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE460A1ECEB125009B7D09 /* Main.storyboard */; };
@@ -15,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3C08EF1ED28EAD007B69FD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3D3C08F11ED29161007B69FD /* menuCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCellTableViewCell.swift; sourceTree = "<group>"; };
+		3D3C08F31ED2A270007B69FD /* menuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
+		3D3C08F71ED2CD72007B69FD /* IntroduceProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroduceProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3D3C08F81ED2CD72007B69FD /* IntroduceProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroduceProfileTableViewCell.xib; sourceTree = "<group>"; };
+		3D3C08FB1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalSkillTableViewCell.swift; sourceTree = "<group>"; };
+		3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TechnicalSkillTableViewCell.xib; sourceTree = "<group>"; };
+		3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		3D3C09011ED2D44D007B69FD /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		3DEE46031ECEB125009B7D09 /* TravelWithUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelWithUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DEE46061ECEB125009B7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DEE46081ECEB125009B7D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D3C08F51ED2CD29007B69FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C08F71ED2CD72007B69FD /* IntroduceProfileTableViewCell.swift */,
+				3D3C08F81ED2CD72007B69FD /* IntroduceProfileTableViewCell.xib */,
+				3D3C08FB1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift */,
+				3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */,
+				3D3C08F11ED29161007B69FD /* menuCellTableViewCell.swift */,
+				3D3C08F31ED2A270007B69FD /* menuView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3D3C08F61ED2CD31007B69FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C08EF1ED28EAD007B69FD /* MenuViewController.swift */,
+				3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */,
+				3D3C09011ED2D44D007B69FD /* ContactViewController.swift */,
+				3DEE46081ECEB125009B7D09 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3DEE45FA1ECEB125009B7D09 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +96,9 @@
 		3DEE46051ECEB125009B7D09 /* TravelWithUs */ = {
 			isa = PBXGroup;
 			children = (
+				3D3C08F51ED2CD29007B69FD /* View */,
+				3D3C08F61ED2CD31007B69FD /* Controller */,
 				3DEE46061ECEB125009B7D09 /* AppDelegate.swift */,
-				3DEE46081ECEB125009B7D09 /* ViewController.swift */,
 				3DEE460A1ECEB125009B7D09 /* Main.storyboard */,
 				3DEE460D1ECEB125009B7D09 /* Assets.xcassets */,
 				3DEE460F1ECEB125009B7D09 /* LaunchScreen.storyboard */,
@@ -125,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEE46111ECEB125009B7D09 /* LaunchScreen.storyboard in Resources */,
+				3D3C08FE1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib in Resources */,
+				3D3C08FA1ED2CD73007B69FD /* IntroduceProfileTableViewCell.xib in Resources */,
 				3DEE460E1ECEB125009B7D09 /* Assets.xcassets in Resources */,
 				3DEE460C1ECEB125009B7D09 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3C08F41ED2A270007B69FD /* menuView.swift in Sources */,
 				3DEE46091ECEB125009B7D09 /* ViewController.swift in Sources */,
+				3D3C09001ED2D444007B69FD /* AboutMeViewController.swift in Sources */,
+				3D3C08FD1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift in Sources */,
+				3D3C08F01ED28EAD007B69FD /* MenuViewController.swift in Sources */,
+				3D3C09021ED2D44D007B69FD /* ContactViewController.swift in Sources */,
+				3D3C08F91ED2CD73007B69FD /* IntroduceProfileTableViewCell.swift in Sources */,
+				3D3C08F21ED29161007B69FD /* menuCellTableViewCell.swift in Sources */,
 				3DEE46071ECEB125009B7D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32QCTLTH5B;
 				INFOPLIST_FILE = TravelWithUs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ATranSoft.TravelWithUs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32QCTLTH5B;
 				INFOPLIST_FILE = TravelWithUs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ATranSoft.TravelWithUs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +358,7 @@
 				3DEE46171ECEB125009B7D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
