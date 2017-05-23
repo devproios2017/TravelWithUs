@@ -156,6 +156,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ledding" destination="K3K-m4-l2l" id="gob-hO-Zti"/>
+                        <outlet property="userName" destination="OJn-k2-WBP" id="DtS-e0-Blb"/>
                         <outlet property="view2" destination="1ok-cy-tG3" id="ve8-7q-fMl"/>
                     </connections>
                 </viewController>
@@ -326,6 +327,7 @@
                     <connections>
                         <outlet property="EmailTextField" destination="rFc-oo-GNP" id="GMw-es-s0e"/>
                         <outlet property="messageTextField" destination="ziQ-tz-MPS" id="bsP-Cn-5iu"/>
+                        <outlet property="name" destination="5DS-GN-1oP" id="6Wu-Fq-0Yc"/>
                         <outlet property="nameTextField" destination="5DS-GN-1oP" id="xfU-Dd-Q6o"/>
                         <outlet property="topContraints" destination="8xK-0A-AJd" id="H1R-p2-nC7"/>
                     </connections>

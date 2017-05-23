@@ -16,6 +16,8 @@
 		3D3C08FE1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */; };
 		3D3C09001ED2D444007B69FD /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */; };
 		3D3C09021ED2D44D007B69FD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C09011ED2D44D007B69FD /* ContactViewController.swift */; };
+		3DC35B371ED4685100D15C46 /* UserDefaultInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC35B361ED4685100D15C46 /* UserDefaultInfor.swift */; };
+		3DC35B391ED4707700D15C46 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DC35B381ED4707700D15C46 /* Settings.bundle */; };
 		3DEE46071ECEB125009B7D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE46061ECEB125009B7D09 /* AppDelegate.swift */; };
 		3DEE46091ECEB125009B7D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE46081ECEB125009B7D09 /* ViewController.swift */; };
 		3DEE460C1ECEB125009B7D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE460A1ECEB125009B7D09 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TechnicalSkillTableViewCell.xib; sourceTree = "<group>"; };
 		3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		3D3C09011ED2D44D007B69FD /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		3DC35B361ED4685100D15C46 /* UserDefaultInfor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultInfor.swift; sourceTree = "<group>"; };
+		3DC35B381ED4707700D15C46 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3DEE46031ECEB125009B7D09 /* TravelWithUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelWithUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DEE46061ECEB125009B7D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DEE46081ECEB125009B7D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 				3D3C08FC1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib */,
 				3D3C08F11ED29161007B69FD /* menuCellTableViewCell.swift */,
 				3D3C08F31ED2A270007B69FD /* menuView.swift */,
+				3DC35B361ED4685100D15C46 /* UserDefaultInfor.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 		3DEE45FA1ECEB125009B7D09 = {
 			isa = PBXGroup;
 			children = (
+				3DC35B381ED4707700D15C46 /* Settings.bundle */,
 				3DEE46051ECEB125009B7D09 /* TravelWithUs */,
 				3DEE46041ECEB125009B7D09 /* Products */,
 			);
@@ -172,6 +178,7 @@
 				3D3C08FE1ED2D129007B69FD /* TechnicalSkillTableViewCell.xib in Resources */,
 				3D3C08FA1ED2CD73007B69FD /* IntroduceProfileTableViewCell.xib in Resources */,
 				3DEE460E1ECEB125009B7D09 /* Assets.xcassets in Resources */,
+				3DC35B391ED4707700D15C46 /* Settings.bundle in Resources */,
 				3DEE460C1ECEB125009B7D09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3C08F41ED2A270007B69FD /* menuView.swift in Sources */,
+				3DC35B371ED4685100D15C46 /* UserDefaultInfor.swift in Sources */,
 				3DEE46091ECEB125009B7D09 /* ViewController.swift in Sources */,
 				3D3C09001ED2D444007B69FD /* AboutMeViewController.swift in Sources */,
 				3D3C08FD1ED2D129007B69FD /* TechnicalSkillTableViewCell.swift in Sources */,

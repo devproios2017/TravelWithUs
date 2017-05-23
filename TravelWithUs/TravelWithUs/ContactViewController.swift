@@ -10,6 +10,7 @@ import UIKit
 
 class ContactViewController: UIViewController {
     
+    @IBOutlet weak var name: UITextField!
     @IBOutlet weak var topContraints: NSLayoutConstraint!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!

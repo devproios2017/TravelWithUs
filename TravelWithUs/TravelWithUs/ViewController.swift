@@ -8,19 +8,26 @@
 
 import UIKit
 
+class UserDefaultInfor: NSObject {
+    let person = [
+        "user" : "atran.dev",
+        "pwd" : "matkhau_atran.dev"
+    ]
+}
+
 class ViewController: UIViewController {
     var flag = true
-  
+    
     @IBOutlet weak var ledding: NSLayoutConstraint!
-  
+    
     @IBOutlet weak var view2: UIView!
-   
+    
     @IBAction func menuTouchUpInside(_ sender: UIBarButtonItem) {
         if flag {
             ledding.constant = 0
         }else{
             ledding.constant = -UIScreen.main.bounds.height*0.8
-
+            
         }
         flag = !flag
         UIView.animate(withDuration: 0.2, animations:{
@@ -53,11 +60,13 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var userName: UILabel!
     override func viewDidLoad() {
+        //load default
         super.viewDidLoad()
         
         ledding.constant = -UIScreen.main.bounds.height*0.8
-
+        
         
         view2.layer.shadowOpacity = 1
         view2.layer.shadowRadius = 1
@@ -78,7 +87,53 @@ class ViewController: UIViewController {
         //        swipeUp.direction = UISwipeGestureRecognizerDirection.up
         //        self.view.addGestureRecognizer(swipeUp)
         
-       
+        
+        
+        //get standard userdefault
+        let userDefaulr = UserDefaults.standard
+        
+        //read int for key lan_chay
+        var lan_chay = userDefaulr.integer(forKey: "lan_chay")
+        print("Chạy lần thứ \(lan_chay)")
+        //increase lan_chay by 1
+        lan_chay = lan_chay+1
+        userDefaulr.set(lan_chay, forKey: "lan_chay")
+        //write lan_chay to userdefautl
+        if let un = userName.text {
+            let username = userDefaulr.string(forKey: "username")
+            userDefaulr.set("\(un)", forKey: "username") // Nên mã hoá
+            print(username!)
+        }
+        
+        
+        
+        //add obj
+        let object = UserDefaultInfor()
+        for (key,value) in object.person {
+            
+            //print("\(key)\(value)")
+            if key=="user"{
+                print("1--\(key)---\(value)")
+                let user = userDefaulr.string(forKey: "user")
+                if user == value {
+                    print("Đã tồn tại")
+                }else{
+                    userDefaulr.set(value, forKey: "user")
+                }
+            }
+            if key=="pwd"{
+                print("2--\(key)---\(value)")
+                let pwd = userDefaulr.string(forKey: "pwd")
+                if pwd == value {
+                    print("Đã tồn tại")
+                }else{
+                    userDefaulr.set(value, forKey: "pwd")
+                }
+            }
+            //synchronize -> commit
+            userDefaulr.synchronize() //sau khi set xong cần đồng bộ xuống cơ sở dữ liệu, bộ nhớ của nó
+        }
+        //userDefaulr.set(, forKey: "obj1")
     }
     
     override func didReceiveMemoryWarning() {
