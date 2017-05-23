@@ -11,7 +11,8 @@ import UIKit
 class TechnicalSkillTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleTechnicalSkillLabel: UILabel!
-    @IBOutlet weak var widthContraint: NSLayoutConstraint!
+
+    @IBOutlet weak var trailingConstraints: NSLayoutConstraint!
    
     @IBOutlet weak var percentLabel: UILabel!
     override func awakeFromNib() {

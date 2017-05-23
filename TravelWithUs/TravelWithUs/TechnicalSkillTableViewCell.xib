@@ -25,38 +25,38 @@
                                 <rect key="frame" x="10" y="48.5" width="330" height="30"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbJ-1b-CAL">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrw-Om-ghb">
-                                                <rect key="frame" x="33" y="4" width="34" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="150" y="6" width="30.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="vrw-Om-ghb" firstAttribute="centerY" secondItem="xbJ-1b-CAL" secondAttribute="centerY" id="OkU-qA-XcQ"/>
-                                            <constraint firstItem="vrw-Om-ghb" firstAttribute="centerX" secondItem="xbJ-1b-CAL" secondAttribute="centerX" id="kmV-oY-Esj"/>
-                                            <constraint firstAttribute="width" constant="100" id="nyp-K5-GC5"/>
+                                            <constraint firstItem="vrw-Om-ghb" firstAttribute="centerY" secondItem="xbJ-1b-CAL" secondAttribute="centerY" id="GuZ-ER-bBE"/>
+                                            <constraint firstItem="vrw-Om-ghb" firstAttribute="centerX" secondItem="xbJ-1b-CAL" secondAttribute="centerX" id="ZJa-LG-fFA"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="xbJ-1b-CAL" firstAttribute="leading" secondItem="eVG-2V-19D" secondAttribute="leading" id="Cgo-ez-FQs"/>
-                                    <constraint firstItem="xbJ-1b-CAL" firstAttribute="top" secondItem="eVG-2V-19D" secondAttribute="top" id="JU2-I5-RQj"/>
-                                    <constraint firstAttribute="bottom" secondItem="xbJ-1b-CAL" secondAttribute="bottom" id="NYr-rp-6BT"/>
+                                    <constraint firstAttribute="bottom" secondItem="xbJ-1b-CAL" secondAttribute="bottom" id="Rn4-KG-wms"/>
                                     <constraint firstAttribute="height" constant="30" id="cdn-77-6FC"/>
+                                    <constraint firstAttribute="trailing" secondItem="xbJ-1b-CAL" secondAttribute="trailing" id="rmA-64-ziU"/>
+                                    <constraint firstItem="xbJ-1b-CAL" firstAttribute="leading" secondItem="eVG-2V-19D" secondAttribute="leading" id="twN-Et-nBZ"/>
+                                    <constraint firstItem="xbJ-1b-CAL" firstAttribute="top" secondItem="eVG-2V-19D" secondAttribute="top" id="w4q-3k-G9h"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -89,8 +89,9 @@
             <connections>
                 <outlet property="percentLabel" destination="vrw-Om-ghb" id="tbg-Vc-ZWN"/>
                 <outlet property="titleTechnicalSkillLabel" destination="Pxj-Hg-cb2" id="7r9-eD-gOj"/>
+                <outlet property="trailingConstraints" destination="rmA-64-ziU" id="aD6-y4-kxG"/>
             </connections>
-            <point key="canvasLocation" x="43" y="-102.5"/>
+            <point key="canvasLocation" x="572" y="-249"/>
         </tableViewCell>
     </objects>
 </document>

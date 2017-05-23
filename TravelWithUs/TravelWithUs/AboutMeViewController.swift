@@ -17,6 +17,7 @@ class AboutMeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
         
         tableView.register( UINib(nibName: "IntroduceProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "IntroduceProfileTableViewCell")
         tableView.register( UINib(nibName:"TechnicalSkillTableViewCell", bundle: nil),forCellReuseIdentifier: "TechnicalSkillTableViewCell")
@@ -33,25 +34,28 @@ extension AboutMeViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    //        return 85
-    //    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row==0 {
+            return 334.5
+        }else{
+            return 90
+        }
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //        if indexPath.row == 0 {
-        //            let cell = tableView.dequeueReusableCell(withIdentifier: "IntroduceProfileTableViewCell", for: indexPath) as! IntroduceProfileTableViewCell
-        //            return cell
-        //        }else{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TechnicalSkillTableViewCell", for: indexPath) as! TechnicalSkillTableViewCell
-        
-        cell.titleTechnicalSkillLabel.text = technicalSkill[indexPath.row]
-        cell.percentLabel.text = "\(100*percentTC[indexPath.row])%"
-        let w = UIScreen.main.bounds.width
-        let cv = Double(w)
-        let width = cv*percentTC[indexPath.row]
-        print(width)
-        cell.widthContraint.constant = CGFloat(width)
-        return cell
-        //  }
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "IntroduceProfileTableViewCell", for: indexPath) as! IntroduceProfileTableViewCell
+            
+            cell.selectionStyle = .none
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TechnicalSkillTableViewCell", for: indexPath) as! TechnicalSkillTableViewCell
+            cell.titleTechnicalSkillLabel.text = technicalSkill[indexPath.row]
+            cell.percentLabel.text = "\(100*percentTC[indexPath.row])%"
+            cell.trailingConstraints.constant = (UIScreen.main.bounds.width-20)*(CGFloat)(1-percentTC[indexPath.row])
+            
+            cell.selectionStyle = .none
+            return cell
+        }
         
     }
     
