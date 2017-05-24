@@ -108,6 +108,7 @@ class ViewController: UIViewController {
         
         
         //add obj
+       // let object = UserDefaultInfor()
         let object = UserDefaultInfor()
         for (key,value) in object.person {
             
