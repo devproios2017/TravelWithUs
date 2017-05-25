@@ -11,7 +11,8 @@ import UIKit
 class UserDefaultInfor: NSObject {
     let person = [
         "user" : "atran.dev",
-        "pwd" : "matkhau_atran.dev"
+        "pwd" : "matkhau_atran.dev",
+        "email":"tranxuanai9x@gmail.com"
     ]
 }
 
@@ -87,55 +88,64 @@ class ViewController: UIViewController {
         //        swipeUp.direction = UISwipeGestureRecognizerDirection.up
         //        self.view.addGestureRecognizer(swipeUp)
         
-        
-        
+        let appDomain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: appDomain)
         //get standard userdefault
-        let userDefaulr = UserDefaults.standard
-        
-        //read int for key lan_chay
-        var lan_chay = userDefaulr.integer(forKey: "lan_chay")
-        print("Chạy lần thứ \(lan_chay)")
-        //increase lan_chay by 1
-        lan_chay = lan_chay+1
-        userDefaulr.set(lan_chay, forKey: "lan_chay")
-        //write lan_chay to userdefautl
-        if let un = userName.text {
-            let username = userDefaulr.string(forKey: "username")
-            userDefaulr.set("\(un)", forKey: "username") // Nên mã hoá
-            print(username!)
+//        let userDefaulr = UserDefaults.standard
+//        
+//        //read int for key lan_chay
+//        var lan_chay = userDefaulr.integer(forKey: "lan_chay")
+//        print("Chạy lần thứ \(lan_chay)")
+//        //increase lan_chay by 1
+//        lan_chay = lan_chay+1
+//        userDefaulr.set(lan_chay, forKey: "lan_chay")
+//        //write lan_chay to userdefautl
+//        if let un = userName.text {
+//            let username = userDefaulr.string(forKey: "username")
+//            userDefaulr.set("\(un)", forKey: "username") // Nên mã hoá
+//            print(username!)
+//        }
+//        
+//        //add obj
+//        // let object = UserDefaultInfor()
+//        let object = UserDefaultInfor()
+//        for (key,value) in object.person {
+//            
+//            //print("\(key)\(value)")
+//            if key=="user"{
+//                print("1--\(key)---\(value)")
+//                let user = userDefaulr.string(forKey: "user")
+//                if user == value {
+//                    print("user Đã tồn tại")
+//                    if key=="pwd"{
+//                        print("2--\(key)---\(value)")
+//                        let pwd = userDefaulr.string(forKey: "pwd")
+//                        if pwd == value {
+//                            print("pwd Đã tồn tại")
+//                        }else{
+//                            userDefaulr.set(value, forKey: "pwd")
+//                        }
+//                    }
+//                    
+//                }else{
+//                    if key=="pwd"{
+//                        print("2--\(key)---\(value)")
+//                        let pwd = userDefaulr.string(forKey: "pwd")
+//                        if pwd == value {
+//                            print("Đã tồn tại")
+//                        }else{
+//                            userDefaulr.set(value, forKey: "pwd")
+//                        }
+//                        userDefaulr.set(value, forKey: "user")
+//                    }
+//                }
+//                //synchronize -> commit
+//                
+//                userDefaulr.synchronize() //sau khi set xong cần đồng bộ xuống cơ sở dữ liệu, bộ nhớ của nó
+          //  }
+            //userDefaulr.set(, forKey: "obj1")
         }
-        
-        
-        
-        //add obj
-       // let object = UserDefaultInfor()
-        let object = UserDefaultInfor()
-        for (key,value) in object.person {
-            
-            //print("\(key)\(value)")
-            if key=="user"{
-                print("1--\(key)---\(value)")
-                let user = userDefaulr.string(forKey: "user")
-                if user == value {
-                    print("Đã tồn tại")
-                }else{
-                    userDefaulr.set(value, forKey: "user")
-                }
-            }
-            if key=="pwd"{
-                print("2--\(key)---\(value)")
-                let pwd = userDefaulr.string(forKey: "pwd")
-                if pwd == value {
-                    print("Đã tồn tại")
-                }else{
-                    userDefaulr.set(value, forKey: "pwd")
-                }
-            }
-            //synchronize -> commit
-            userDefaulr.synchronize() //sau khi set xong cần đồng bộ xuống cơ sở dữ liệu, bộ nhớ của nó
-        }
-        //userDefaulr.set(, forKey: "obj1")
-    }
+   // }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
