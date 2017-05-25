@@ -76,21 +76,23 @@ class ViewController: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
         
-        //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
-        //        swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        //        self.view.addGestureRecognizer(swipeRight)
-        //
-        //        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
-        //        swipeDown.direction = UISwipeGestureRecognizerDirection.down
-        //        self.view.addGestureRecognizer(swipeDown)
-        //
-        //        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
-        //        swipeUp.direction = UISwipeGestureRecognizerDirection.up
-        //        self.view.addGestureRecognizer(swipeUp)
+                let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
+                swipeRight.direction = UISwipeGestureRecognizerDirection.right
+                self.view.addGestureRecognizer(swipeRight)
         
-        let appDomain = Bundle.main.bundleIdentifier!
-        UserDefaults.standard.removePersistentDomain(forName: appDomain)
-        //get standard userdefault
+                let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
+                swipeDown.direction = UISwipeGestureRecognizerDirection.down
+                self.view.addGestureRecognizer(swipeDown)
+        
+                let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestureAction(_:)))
+                swipeUp.direction = UISwipeGestureRecognizerDirection.up
+                self.view.addGestureRecognizer(swipeUp)
+  
+//        //Reset defautl
+//        let appDomain = Bundle.main.bundleIdentifier!
+//        UserDefaults.standard.removePersistentDomain(forName: appDomain)
+        
+//     //   get standard userdefault
 //        let userDefaulr = UserDefaults.standard
 //        
 //        //read int for key lan_chay
@@ -142,10 +144,10 @@ class ViewController: UIViewController {
 //                //synchronize -> commit
 //                
 //                userDefaulr.synchronize() //sau khi set xong cần đồng bộ xuống cơ sở dữ liệu, bộ nhớ của nó
-          //  }
-            //userDefaulr.set(, forKey: "obj1")
-        }
-   // }
+//            }
+//     //       userDefaulr.set(, forKey: "obj1")
+//        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

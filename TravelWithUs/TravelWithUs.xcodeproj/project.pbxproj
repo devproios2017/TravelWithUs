@@ -19,8 +19,7 @@
 		3DC35B371ED4685100D15C46 /* UserDefaultInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC35B361ED4685100D15C46 /* UserDefaultInfor.swift */; };
 		3DC35B391ED4707700D15C46 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DC35B381ED4707700D15C46 /* Settings.bundle */; };
 		3DC8FE5D1ED66D82005534FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8FE5C1ED66D82005534FA /* Assets.xcassets */; };
-		3DC8FE631ED693AB005534FA /* Register01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE5E1ED693AB005534FA /* Register01ViewController.swift */; };
-		3DC8FE641ED693AB005534FA /* Register02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE5F1ED693AB005534FA /* Register02ViewController.swift */; };
+		3DC8FE631ED693AB005534FA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE5E1ED693AB005534FA /* RegisterViewController.swift */; };
 		3DC8FE651ED693AB005534FA /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE601ED693AB005534FA /* ForgetViewController.swift */; };
 		3DC8FE661ED693AB005534FA /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE611ED693AB005534FA /* CompleteViewController.swift */; };
 		3DC8FE671ED693AB005534FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8FE621ED693AB005534FA /* LoginViewController.swift */; };
@@ -47,8 +46,7 @@
 		3DC35B361ED4685100D15C46 /* UserDefaultInfor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultInfor.swift; sourceTree = "<group>"; };
 		3DC35B381ED4707700D15C46 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3DC8FE5C1ED66D82005534FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3DC8FE5E1ED693AB005534FA /* Register01ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register01ViewController.swift; sourceTree = "<group>"; };
-		3DC8FE5F1ED693AB005534FA /* Register02ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register02ViewController.swift; sourceTree = "<group>"; };
+		3DC8FE5E1ED693AB005534FA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3DC8FE601ED693AB005534FA /* ForgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		3DC8FE611ED693AB005534FA /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		3DC8FE621ED693AB005534FA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +100,7 @@
 				3D3C08FF1ED2D444007B69FD /* AboutMeViewController.swift */,
 				3D3C09011ED2D44D007B69FD /* ContactViewController.swift */,
 				3DEE46081ECEB125009B7D09 /* ViewController.swift */,
-				3DC8FE5E1ED693AB005534FA /* Register01ViewController.swift */,
-				3DC8FE5F1ED693AB005534FA /* Register02ViewController.swift */,
+				3DC8FE5E1ED693AB005534FA /* RegisterViewController.swift */,
 				3DC8FE601ED693AB005534FA /* ForgetViewController.swift */,
 				3DC8FE611ED693AB005534FA /* CompleteViewController.swift */,
 				3DC8FE621ED693AB005534FA /* LoginViewController.swift */,
@@ -252,8 +249,7 @@
 				3DEE46071ECEB125009B7D09 /* AppDelegate.swift in Sources */,
 				3DC8FE731ED6967B005534FA /* TPKeyboardAvoidingScrollView.m in Sources */,
 				3DC8FE661ED693AB005534FA /* CompleteViewController.swift in Sources */,
-				3DC8FE631ED693AB005534FA /* Register01ViewController.swift in Sources */,
-				3DC8FE641ED693AB005534FA /* Register02ViewController.swift in Sources */,
+				3DC8FE631ED693AB005534FA /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
