@@ -41,10 +41,10 @@ class RegisterViewController: UIViewController {
             self.phoneNumberTextField.isEnabled = false
             self.addressTextField.isEnabled = false
         }else{
-            self.paswordTextField.isEnabled = false
-            self.repasswordTextField.isEnabled = false
-            self.phoneNumberTextField.isEnabled = false
-            self.addressTextField.isEnabled = false
+            self.paswordTextField.isEnabled = true
+            self.repasswordTextField.isEnabled = true
+            self.phoneNumberTextField.isEnabled = true
+            self.addressTextField.isEnabled = true
 
             print("Tài khoản Khong  tồn tại!")
         }
@@ -62,7 +62,7 @@ class RegisterViewController: UIViewController {
         
     }
     @IBAction func registerButtonTouchUpInside() {
-        
+       print("Registeting...")
     }
     
     
